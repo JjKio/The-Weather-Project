@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather 🌅</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scr/notes.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-floating mb-2 city-search">
+       
+        <form class="search-form" id="city-form">
+          <input
+          type="search"
+          placeholder="Type City"
+          autocomplete="off"
+          autofocus="on"
+          class="form-control" 
+          id="city-input"
+          />
+          <input
+         type="button" 
+         value="search"
+         class="btn btn-warning search"
+         />
+          <input
+          id="current-btn"
+         type="button" 
+         value="Current"
+         class="btn btn-warning search"
+         />
+        </form>
+   
+      </div>
+      <br/ >
+      <div class="town">
+        <h1 class="cur-city" id="main-city">Santa Ana
+
+        </h1>
+        <h2 id="current-date">Wednsday, August 17th <br/ > 3:45PM</h2>
+         <div class="row">
+          <div class="col-md-3">
+      <h5><span id="description">#</span></h5>
+            <h3>Wind:<span id="wind"></span>km/h</h3>
+        <h3 class="humid">Humidity:<span id="humidity"></span>%</h3>
+      
+        </div>
+        <div class="col-md-3">
+
+
+        <h1 class="cur-temp">  <span id="the-temp"> 85°</span>°
+              <span class="units">
+          <a href="#" id="fhight">F</a>|
+          <a href="#" id="celc">C</a></span>
+        
+        
+        </div>
+          <div class="col-md-3">
+          <img src="images/sun.png" class="main-sunny"/>
+      </div>
+        
+</div>
+      </h1>
+      </div>
+      <div class="thru-day">
+        <h2>Through The Day Expect. . .</h2>
+      
+      <div class="row thru-day-time">
+        <div class="col-3">5:00PM 
+                        <img src="images/sun.png" class="day-icon"/> 80℉</div>
+        
+        
+                        <div class="col-3">7:00PM 
+                        <img src="images/sunrise.png" class="day-icon"/> 78℉</div>
+        <div class="col-3">9:00PM 
+                        <img src="images/night-mode.png" class="day-icon"/> 73℉</div>
+        <div class="col-3">11:00PM 
+                        <img src="images/night-mode.png" class="day-icon"/> 71℉</div>
+      </div>
+      </div>
+        <div class="later-week">
+          <h3>Later In The Week. . . </h3>
+
+          <div class="container text-center">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 week-days">
+              <div class="col">
+                <div class="p-3 ">
+                  Thu
+      <img src="images/sun.png" class="sunny"/>
+
+                  89℉
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3">
+                  Fri
+                        <img src="images/sun.png" class="sunny"/>
+
+                  90℉
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3">
+                  Sat
+                        <img src="images/sun.png" class="sunny"/>
+
+                  87℉
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 ">
+                  Sun
+                       <img src="images/sun.png" class="sunny"/>
+
+                  87℉
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3">
+                  Mon      <img src="images/sun.png" class="sunny"/>
+
+                  86℉
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src="scr/stuff.js"></script>
+  </body>
+</html>

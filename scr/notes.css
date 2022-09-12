@@ -1,0 +1,134 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  max-width: 75%;
+  display: block;
+  padding: 0px 200px;
+  margin: 0 auto;
+  background: linear-gradient(to top, #fff3d1 0%, #f1d7d7fd 100%);
+  color: #0f637a;
+}
+.enter-city {
+  margin: 30px 10px;
+}
+
+.units {
+  font-size: 50px;
+}
+
+.cur-city {
+  text-decoration: underline;
+  text-decoration-color: #e98f48e8;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.town h2 {
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.town h3 {
+  font-style: italic;
+  padding-top: 35px;
+  font-size: 35px;
+}
+
+.town {
+  margin: 0px 40px;
+  padding: 40px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color: #e98f48e8;
+}
+
+.city-search {
+  text-align: left;
+  margin: 40px;
+  padding: 10px 250px 2px 10px;
+}
+
+.search {
+  margin: 10px;
+}
+
+.cur-temp {
+  text-align: right;
+  padding-bottom: 25px;
+  margin-right: 20px;
+  font-size: 85px;
+  margin-left: 125px;
+  position: relative;
+}
+
+.humid {
+  padding-bottom: 50px;
+}
+
+.main-sunny {
+  max-width: 250px;
+  margin-left: 124px;
+  margin-top: -125px;
+}
+
+.sunny {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.day-icon {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.town {
+  background-color: #87e5da;
+}
+.thru-day {
+  background-color: #87e5da;
+  margin: 30px 40px;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color: #e98f48e8;
+}
+
+.thru-day h2 {
+  text-decoration: underline;
+  text-decoration-color: #e98f48e8;
+}
+.thru-day-time {
+  margin: 30px 10px;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.later-week {
+  margin: 30px 40px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #87e5da;
+  font-size: 30px;
+  border: 2px;
+  border-style: solid;
+  border-color: #e98f48e8;
+}
+.later-week h3 {
+  text-decoration: underline;
+  text-decoration-color: #e98f48e8;
+}
+
+.week-days {
+  font-size: 25px;
+  border-radius: 20px;
+}
