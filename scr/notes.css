@@ -132,3 +132,9 @@ body {
   font-size: 25px;
   border-radius: 20px;
 }
+
+#git-link {
+  margin: 30px 45px;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
