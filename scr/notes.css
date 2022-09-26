@@ -1,6 +1,6 @@
 body {
   font-family: "Ubuntu", sans-serif;
-  max-width: 75%;
+  max-width: 100%;
   display: block;
   padding: 0px 200px;
   margin: 0 auto;
@@ -18,19 +18,14 @@ body {
 .cur-city {
   text-decoration: underline;
   text-decoration-color: #e98f48e8;
-  font-size: 60px;
+  font-size: 40px;
   padding-top: 30px;
-}
-
-.town h2 {
-  padding-top: 20px;
-  font-size: 45px;
 }
 
 .town h3 {
   font-style: italic;
-  padding-top: 35px;
-  font-size: 35px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .town {
@@ -57,7 +52,7 @@ body {
   text-align: right;
   padding-bottom: 25px;
   margin-right: 20px;
-  font-size: 85px;
+  font-size: 80px;
   margin-left: 125px;
   position: relative;
 }

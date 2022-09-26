@@ -19,8 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="form-floating mb-2 city-search">
+   <div class="container">
+       <div class="form-floating mb-2 city-search">
        
         <form class="search-form" id="city-form">
           <input
@@ -32,48 +32,54 @@
           id="city-input"
           />
           <input
-         type="button" 
+         type="submit" 
          value="search"
          class="btn btn-warning search"
          />
           <input
           id="current-btn"
-         type="button" 
+         type="submit" 
          value="Current"
          class="btn btn-warning search"
          />
         </form>
    
       </div>
-      <br/ >
-      <div class="town">
-        <h1 class="cur-city" id="main-city">Santa Ana
 
-        </h1>
+
+      <br/ >
+
+      <div class="town">
+        <h1 class="cur-city" id="main-city">Santa Ana  </h1>
         <h2 id="current-date">Wednsday, August 17th <br/ > 3:45PM</h2>
-         <div class="row">
-          <div class="col-md-3">
+       <div class="row">
+
+        <!--down-->
+       <div class="col-md-3 three-in">
           <h3><span id="description">#</span></h3>
             <h3>Wind:<span id="wind"></span>km/h</h3>
-        <h3 class="humid">Humidity:<span id="humidity"></span>%</h3>
-      
+          <h3 class="humid">Humidity:<span id="humidity"></span>%</h3>
         </div>
+        <!--up-->
+
+        <!--down-->
         <div class="col-md-3">
-
-
-        <h1 class="cur-temp">  <span id="the-temp"> 85°</span>°
-              <span class="units">
-          <a href="#" id="fhight">F</a>|
-          <a href="#" id="celc">C</a></span>
-        
-        
+         <h1 class="cur-temp">  <span id="the-temp"> 85</span>°
+          <a href="#" class="units" id="fhight">F|</a><a href="#" class="units" id="celc">C</a>
+          </h1>
+          
+          
         </div>
+        <!--up-->
+
+        <!--down-->
           <div class="col-md-3">
           <img src="images/sun.png" class="main-sunny"/>
-      </div>
-        
-</div>
-      </h1>
+          </div>
+          <!---up-->
+
+
+          </div>
       </div>
 
       <!--
