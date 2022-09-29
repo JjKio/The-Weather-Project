@@ -93,38 +93,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-/*(response) {
-  console.log(response.data.daily);
-
-  let forecastElement = document.querySelector("#forecast");
-
-
-  let forecastHTML = `<div class = "row">`;
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      ` <div class="col-2">
-            <div class="weather-forecast-date">
-              ${day}
-            </div>
-            <img src="http://openweathermap.org/img/wn/50d@2x.png"
-            alt="" />
-            <div class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperature-max">
-                ${Math.round(forecastDay.temp.max)}°
-              </span>
-              <span class="weather-forecast-temperature-min">
-                ${Math.round(forecastDay.temp.min)}°
-              </span>
-            </div>
-          </div>
-        `;
-  });
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
-}
-*/
-
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
@@ -132,25 +100,6 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-function tempLink(event) {
-  event.preventDefault();
-  let tempNumber = document.querySelector("#the-temp");
-  tempNumber.innerHTML = 20 + "°";
-}
-
-function tempLinkCel(event) {
-  event.preventDefault();
-  let tempcel = document.querySelector("#the-temp");
-  tempcel.innerHTML = 30 + "°";
-}
-
-let celegree = document.querySelector("#celc");
-celegree.addEventListener("click", tempLinkCel);
-
-let degree = document.querySelector("#fhight");
-degree.addEventListener("click", tempLink);
-// Ferenheight and Celcius links ^^^^^
-/*
 function testPosition(position) {
   console.log(position);
   console.log(position.coords.longitude);
@@ -158,7 +107,7 @@ function testPosition(position) {
 }
 navigator.geolocation.getCurrentPosition(testPosition);
 // Testing coords^^^
-*/
+
 function showWeather(response) {
   document.querySelector("#main-city").innerHTML = response.data.name;
   document.querySelector("#the-temp").innerHTML = Math.round(
