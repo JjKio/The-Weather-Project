@@ -12,68 +12,61 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scr/notes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scr/notes.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-   <div class="container">
-       <div class="form-floating mb-2 city-search">
-       
+    <div class="container">
+      <div class="form-floating mb-2 city-search">
         <form class="search-form" id="city-form">
           <input
-          type="search"
-          placeholder="Type City"
-          autocomplete="off"
-          autofocus="on"
-          class="form-control" 
-          id="city-input"
+            type="search"
+            placeholder="Type City"
+            autocomplete="off"
+            autofocus="on"
+            class="form-control"
+            id="city-input"
           />
+          <input type="submit" value="search" class="btn btn-warning search" />
           <input
-         type="submit" 
-         value="search"
-         class="btn btn-warning search"
-         />
-          <input
-          id="current-btn"
-         type="submit" 
-         value="Current"
-         class="btn btn-warning search"
-         />
+            id="current-btn"
+            type="submit"
+            value="Current"
+            class="btn btn-warning search"
+          />
         </form>
-   
       </div>
-
 
       <br/ >
 
       <div class="town">
-        <h1 class="cur-city" id="main-city">Santa Ana  </h1>
+        <h1 class="cur-city" id="main-city">Santa Ana</h1>
         <h2 id="current-date">Wednsday, August 17th <br/ > 3:45PM</h2>
         <div class="row">
-
-        <div class="col-md-3 three-in">
-          <h3><span id="description">#</span></h3>
+          <div class="col-md-3 three-in">
+            <h3><span id="description">#</span></h3>
             <h3>Wind:<span id="wind"></span>km/h</h3>
-          <h3 class="humid">Humidity:<span id="humidity"></span>%</h3>
-        </div>
-      
-        
-        <div class="col-md-3">
-         <h1 class="cur-temp">  <span id="the-temp"> 85</span>°
-          <a href="#" class="units" id="fhight">F|</a><a href="#" class="units" id="celc">C</a>
-          </h1>
-          
-          
+            <h3 class="humid">Humidity:<span id="humidity"></span>%</h3>
           </div>
 
           <div class="col-md-3">
-          <img src="images/sun.png" class="main-sunny"/>
+            <h1 class="cur-temp">
+              <span id="the-temp"> 85</span>°
+              <a href="#" class="units" id="fhight">F|</a
+              ><a href="#" class="units" id="celc">C</a>
+            </h1>
           </div>
 
+          <div class="col-md-3">
+            <img src="images/sun.png" class="main-sunny" />
           </div>
+        </div>
       </div>
 
       <!--
@@ -95,65 +88,19 @@
         </div>
 
 --->
-        <div class="later-week">
-          <h3>Later In The Week. . . </h3>
-
-          <div class="weather-forecast" id="forecast"></div>
-
-        </div>
-<!--
-
-          <div class="container text-center">
-            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 week-days">
-              <div class="col">
-                <div class="p-3 ">
-                  Thu
-                <img src="images/sun.png" class="sunny"/>
-
-                  89℉
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-                  Fri
-                        <img src="images/sun.png" class="sunny"/>
-
-                  90℉
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-                  Sat
-                        <img src="images/sun.png" class="sunny"/>
-
-                  87℉
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3 ">
-                  Sun
-                       <img src="images/sun.png" class="sunny"/>
-
-                  87℉
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-                  Mon      <img src="images/sun.png" class="sunny"/>
-
-                  86℉
-                </div>
-              </div>
-            
-            -->        
-            
-          </div>
-       
-        </div>
-      
-        <div id="git-link"><a href="https://github.com/JjKio/The-Weather-Project" target="_blank">Open-Source Code</a> by Cristina Matadama</div>
+      <div class="later-week">
+        <h3>Later In The Week. . .</h3>
+        <div class="weather-forecast" id="forecast"></div>
+      </div>
     </div>
+
+    <div id="git-link">
+      <a href="https://github.com/JjKio/The-Weather-Project" target="_blank"
+        >Open-Source Code</a
+      >
+      by Cristina Matadama
     </div>
-      <script src="scr/stuff.js"></script>
+
+    <script src="scr/stuff.js"></script>
   </body>
 </html>

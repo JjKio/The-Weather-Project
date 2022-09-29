@@ -48,23 +48,47 @@ let currDate = document.querySelector("#current-date");
 currDate.innerHTML = fromatDate(new Date());
 //Current date ^^^''
 
-//  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//
 
-function displayForecast(response) {
-  let forecast = response.data.daily;
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = "";
+  forecastHTML =
+    forecastHTML +
+    `
+<div class="row>
+<div class="col-2">
+<div class="weather-forecast-date">Thu</div>
+<img src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt="" 
+            width= "50"/>
+            <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"> 18 </span>        
+            <span class="weather-forecast-temperature-min"> 12</span>
+            </div>
+            </div>
+            </div>
+        `;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+/*(response) {
+  console.log(response.data.daily);
 
   let forecastElement = document.querySelector("#forecast");
 
+  let days = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
+
   let forecastHTML = `<div class = "row">`;
-  forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
-      forecastHTML =
-        forecastHTML +
-        ` <div class="col-2">
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2">
             <div class="weather-forecast-date">
-              ${fromatDate(forecastDay.dt)}
+              ${day}
             </div>
-            <img src="" alt="" />
+            <img src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt="" />
             <div class="weather-forecast-temperatures">
               <span class="weather-forecast-temperature-max">
                 ${Math.round(forecastDay.temp.max)}°
@@ -75,18 +99,20 @@ function displayForecast(response) {
             </div>
           </div>
         `;
-    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+*/
 
+/*
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
+*/
 
 function tempLink(event) {
   event.preventDefault();
@@ -164,6 +190,7 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
 
+displayForecast();
 //bonus part
 
 /* 
