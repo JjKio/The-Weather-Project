@@ -118,6 +118,20 @@ body {
   border-style: solid;
   border-color: #e98f48e8;
 }
+
+.weather-forecast {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  font-size: 20px;
+}
+
+.weather-forecast-temperature-min {
+  color: #5fa4b8;
+}
+
 .later-week h3 {
   text-decoration: underline;
   text-decoration-color: #e98f48e8;

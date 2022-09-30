@@ -74,7 +74,7 @@ function displayForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="42"
+          width="80"
         /> 
          <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
@@ -158,15 +158,3 @@ let currentLocationButton = document.querySelector("#current-btn");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
-
-//bonus part
-
-/* 
-function curPosition(position) {
-  event.preventDefault();
-  let currentBtn = document.querySelector("#current-btn");
-  currentBtn.innerHTML = position.coords.latitude;
-}
-
-navigator.geolocation.getCurrentPosition(curPosition);
-*/
