@@ -50,6 +50,24 @@ currDate.innerHTML = fromatDate(new Date());
 
 //
 
+function displayThruDay() {
+  let displayElement = document.querySelector("#hourlyDay");
+
+  displayElement.innerHTML = `
+    <div class="row">
+    <div class="col-2">
+    <div class="hourly-time"> 7:00</div>
+    <img 
+      src="http://openweathermap.org/img/wn/50d@2x.png"
+      alt=""
+      width="42"
+      />
+      <div class="hourly-temp"> 85 </div>
+  `;
+}
+
+displayThruDay();
+
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -119,6 +137,13 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
 }

@@ -19,7 +19,6 @@ body {
   text-decoration: underline;
   text-decoration-color: #e98f48e8;
   font-size: 40px;
-  padding-top: 30px;
 }
 
 .town h3 {
@@ -36,6 +35,8 @@ body {
   border: 2px;
   border-style: solid;
   border-color: #e98f48e8;
+
+  background-color: #87e5da;
 }
 
 .city-search {
@@ -62,7 +63,6 @@ body {
 }
 
 .main-sunny {
-  max-width: 250px;
   margin-left: 124px;
   margin-top: -125px;
 }
@@ -83,9 +83,6 @@ body {
   padding-bottom: 20px;
 }
 
-.town {
-  background-color: #87e5da;
-}
 .thru-day {
   background-color: #87e5da;
   margin: 30px 40px;
@@ -96,7 +93,7 @@ body {
   border-color: #e98f48e8;
 }
 
-.thru-day h2 {
+.thru-day h3 {
   text-decoration: underline;
   text-decoration-color: #e98f48e8;
 }
