@@ -49,25 +49,17 @@ currDate.innerHTML = fromatDate(new Date());
 //Current date ^^^''
 
 //
+/*
+function displayThruDay(response) {
+  console.log(response.daily);
 
-function displayThruDay() {
   let displayElement = document.querySelector("#hourlyDay");
 
   displayElement.innerHTML = `
-    <div class="row">
-    <div class="col-2">
-    <div class="hourly-time"> 7:00</div>
-    <img 
-      src="http://openweathermap.org/img/wn/50d@2x.png"
-      alt=""
-      width="42"
-      />
-      <div class="hourly-temp"> 85 </div>
+   
   `;
 }
-
-displayThruDay();
-
+*/
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -116,6 +108,7 @@ function getForecast(coordinates) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
+  console.log(apiUrl);
 }
 
 function testPosition(position) {
@@ -146,6 +139,7 @@ function showWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
+  console.log(response.data);
 }
 
 function searchCity(city) {
