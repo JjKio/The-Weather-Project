@@ -38,7 +38,7 @@ function fromatDate(newDate) {
     minute = `0${minute}`;
   }
 
-  let today = `${day}, ${month} ${date} </br> ${hour}:${minute}`;
+  let today = `<div class="theDay">${day}, ${month} ${date} </br> ${hour}:${minute}</div>`;
 
   return today;
 }

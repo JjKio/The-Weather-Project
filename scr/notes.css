@@ -1,9 +1,9 @@
 body {
   font-family: "Ubuntu", sans-serif;
-  max-width: 100%;
+  max-width: 80%;
   display: block;
-  padding: 0px 200px;
-  margin: 0 auto;
+  padding: 50px 400px;
+  margin: 50px auto;
   background: linear-gradient(to top, #fff3d1 0%, #f1d7d7fd 100%);
   color: #0f637a;
 }
@@ -18,7 +18,7 @@ body {
 .cur-city {
   text-decoration: underline;
   text-decoration-color: #e98f48e8;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .town h3 {
@@ -49,17 +49,31 @@ body {
   margin: 10px;
 }
 
+.theDay {
+  font-size: 20px;
+  font-weight: 400;
+}
 .cur-temp {
   text-align: right;
   padding-bottom: 25px;
   margin-right: 20px;
-  font-size: 80px;
+  font-size: 40px;
   margin-left: 125px;
   position: relative;
 }
 
-.humid {
-  padding-bottom: 50px;
+#description {
+  font-size: 18px;
+  font-weight: 400;
+}
+#the-wind {
+  font-size: 18px;
+  font-weight: 400;
+}
+#the-humid {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 20px;
 }
 
 .main-sunny {
@@ -110,10 +124,15 @@ body {
   padding: 40px;
   border-radius: 20px;
   background-color: #87e5da;
-  font-size: 30px;
+  font-size: 15px;
   border: 2px;
   border-style: solid;
   border-color: #e98f48e8;
+}
+
+#in-the-week {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .weather-forecast {
@@ -142,6 +161,6 @@ body {
 #git-link {
   margin: 30px 45px;
   padding-bottom: 50px;
-  font-size: 18px;
+  font-size: 12px;
   text-align: center;
 }
