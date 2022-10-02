@@ -2,7 +2,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   max-width: 80%;
   display: block;
-  padding: 50px 400px;
+  padding: 25px 400px;
   margin: 50px auto;
   background: linear-gradient(to top, #fff3d1 0%, #f1d7d7fd 100%);
   color: #0f637a;
@@ -42,7 +42,7 @@ body {
 .city-search {
   text-align: left;
   margin: 40px;
-  padding: 10px 250px 2px 10px;
+  padding: 10px 290px 2px 10px;
 }
 
 .search {
@@ -57,7 +57,7 @@ body {
   text-align: right;
   padding-bottom: 25px;
   margin-right: 20px;
-  font-size: 40px;
+  font-size: 65px;
   margin-left: 125px;
   position: relative;
 }
@@ -77,8 +77,8 @@ body {
 }
 
 .main-sunny {
-  margin-left: 124px;
-  margin-top: -125px;
+  margin-left: 107px;
+  margin-top: -59px;
 }
 
 .sunny {
